@@ -1,0 +1,92 @@
+nav {
+	position: fixed;
+}
+
+#Jumbotron_home {
+	background-image: url(https://github.com/hcbreedl/Portfolio/blob/master/assignment2/DeathtoStock_Creative%20Community3.jpg?raw=true);
+	background-size: cover;
+	margin-top: -20px;
+	border-top: solid white 3px;
+	border-bottom: solid white 3px;
+	-webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+    height: 500px;
+}
+
+.btn-lg {
+	margin-left: 80px;
+}
+
+#About_container {
+	background-image: url(https://github.com/hcbreedl/Portfolio/blob/master/assignment2/IMG_0990-1.JPG?raw=true);
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 150%;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: -30px;
+    width: 1152px;
+    height: 700px;
+    border-bottom: solid white 3px;
+}
+
+#About_paragraph {
+	margin-top: 100px;
+	border: solid white 3px;
+	text-align: center;
+	padding: 10px;
+}
+
+#social_media_buttons {
+	margin-top: 15px;
+}
+
+#linkedin_button {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+h2 {
+	text-align: center;
+	font-size: 44px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding: 15px;
+}
+
+#Portfolio_title_div {
+	margin-top: 12px;
+    border-bottom: solid white 3px;
+    background-color: #df691a;
+    opacity: 0.9;
+    margin-bottom: 14px;
+}
+
+#Portfolio_title_row {
+	background-color: white;
+}
+
+#thumbnail_images_row {
+	background-color: white;
+}
+
+legend {
+	text-align: center;
+}
+
+#inputMessage {
+	height: 120px;
+}
+
+#footer {
+	text-align: center;
+}
+
+
+
+
+
+

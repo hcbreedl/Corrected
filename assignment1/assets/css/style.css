@@ -1,0 +1,1136 @@
+/* This CSS page contains all styling for current portfolio page and is organized as follows:
+===============================================
+	1. Tags (organized in alphabetical order)
+	2. Flex Containers
+	3. Header/NavBar
+	4. Body/Midsection
+	5. About Me Page
+	6. Portfolio Page
+	7. Portfolio Icons 1-5
+	8. Contact Page (Form)
+	9. Connect Container - About Me Page
+	10. Connect Container - Portfolio Page
+	11. Connect Container - Contact Page
+	12. Conect Container - Icons
+	13. Footer
+===============================================
+*/
+
+a {
+	color: #bbb;
+	text-decoration: none;
+	margin: 15px;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+a:hover {
+	color: pink;
+	transition: 0.5s;
+}
+
+a:active {
+	color: limegreen;
+}
+
+body {
+	margin: 0;
+}
+
+form {
+	color: darkgrey;
+}
+
+h1 {
+	background-color: #4aaaa5;
+	color: white;
+	padding: 16px;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	font-size: 21px;
+	margin: 0;
+	margin-right: -15px;
+	margin-left: 15px;
+	padding-left: 0;
+}
+
+h2 {
+	background-color: #4aaaa5;
+	color: white;
+	padding: 17px;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	font-size: 21px;
+	margin: 0;
+	margin-right: 15px;
+	margin-left: 15px;
+	padding-left: 0;
+}
+
+h3 {
+	text-align: center;
+	color: #4aaaa5;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	border-bottom: solid #dddddd 2px;
+	padding-bottom: 25px;
+}
+
+li {
+	display: inline;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: 100;
+}
+
+p {
+	color: #777777;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 13px;
+	margin: 19px 2px 2px 2px;
+	line-height: 210%;
+	padding-top: 5px;
+	font-weight: 100;
+}
+
+span {
+	font-weight: 100;
+	color: lightgrey;
+	opacity: 0.3;
+}
+
+/* Flex Containers */
+.flex-container {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-bottom: solid #cccccc 2px;
+    }
+
+.flex-item:nth-child(1) {
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    }
+
+.flex-item:nth-child(2) {
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-align-self: flex-start;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+    }
+
+/* Header/NavBar */
+#header {
+	margin: 0;
+}
+
+#name {
+	margin-left: -7px;
+	padding: 0;
+
+	background-color: #4aaaa5;
+	color: white;
+	padding: 17px;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	font-size: 21px;
+	margin: 0;
+	margin-right: 15px;
+	margin-left: 35px;
+	padding-left: 0;
+}
+
+.navbar {
+	background-color: #ffffff;
+	margin-right: 34px;
+	margin-left: 307px;
+}
+
+/* Body/MidSection */
+/* =============== */
+
+#about_me_background {
+	background-image: url("https://github.com/hcbreedl/Basic-Portfolio/blob/master/assets/images/cork-wallet/cork-wallet.png?raw=true");
+	padding-bottom: 28px;
+	padding-top: 12px;
+	margin: 0 auto;
+}
+
+.h2 {
+	color: #4aaaa5;
+	background-color: white;
+	border-bottom: solid #dddddd 2px;
+	margin-bottom: 0px;
+}
+
+/* About Me Page */
+.about_me {
+	border: solid #dddddd 1px;
+	display: block;
+	background-color: #ffffff;
+	padding: 10px;
+	margin: -39px 0px 92px 46px;
+	height: 360px;
+	width: 600px;
+
+}
+
+.about_me img {
+	float: left;
+	margin: 8px 14px 8px 14px;
+	height: 200px;
+	width: 200px;
+}
+
+.image_container {
+	float: left;
+}
+
+.p_container {
+	margin-left: 13px;
+	margin-right: 9px;
+}
+
+/* Portfolio Page */
+.portfolio_background {
+	border-bottom: solid #4aaaa5 10px;
+	float: left;
+	background-image: url("https://github.com/hcbreedl/Basic-Portfolio/blob/master/assets/images/cork-wallet/cork-wallet.png?raw=true");
+}
+
+.portfolio_icons {
+	border: solid #dddddd 1px;
+	display: inline;
+	background-color: #ffffff;
+	padding: 10px;
+	margin: 0px 0px 92px 24px;
+	height: 700px;
+	width: 550px;
+}
+
+.portfolio_heading {
+	color: #4aaaa5;
+	background-color: #ffffff;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	border-bottom: solid #dddddd 2px;
+}
+
+.portfolio_icons img{
+	display: inline;
+	height: 250px;
+	width: 250px;
+	margin: 10px;
+}
+
+.portfolio_icons img:hover {
+    opacity: 0.5;
+    transition: 1s;
+    filter: blur(5px);
+}
+
+/* Portfolio Icon 1 */
+.icon1 {
+	float: left;
+	height: 160px;
+	width: 216px;
+	margin: 20px;
+}
+
+.icon1 img{
+	height: 160px;
+	width: 216px;
+	border-radius: 4px;
+}
+
+.icon1_button {
+	display: block;
+	position: relative;
+	z-index: 1;
+	background-color: #4aaaa5;
+	height: 40px;
+	width: 216px;
+	bottom: 80px;
+	right: 5px;
+	border-radius: 1px;
+}
+
+.icon1_button:hover {
+	background-color: white;
+	opacity: 0.8;
+	transition: 0.5s;
+
+}
+
+.icon1_button:active {
+	background-color: #8463c3;
+	opacity: 0.8;
+}
+
+.icon1_button p {
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 20px;
+	position: relative;
+	color: white;
+	text-align: center;
+	top: -5px;
+}
+
+.icon1_button p:hover {
+	color: black;
+	transition: 1.5s;
+}
+
+/* Portfolio Icon 2 */
+.icon2 {
+	float: right;
+	height: 160px;
+	width: 216px;
+	margin: 20px;
+	margin-right: 40px;
+}
+
+.icon2 img{
+	height: 160px;
+	width: 216px;
+}
+
+.icon2_button {
+	display: block;
+	position: relative;
+	z-index: 1;
+	background-color: #4aaaa5;
+	height: 45px;
+	width: 216px;
+	bottom: 100px;
+	right: 5px;
+}
+
+.icon2_button h6 {
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	position: relative;
+	color: white;
+	text-align: center;
+	top: 15px;
+}
+
+/* Portfolio Icon 3 */
+.icon3 {
+	float: left;
+	height: 160px;
+	width: 216px;
+	margin: 20px;
+}
+
+.icon3 img{
+	height: 160px;
+	width: 216px;
+}
+
+.icon3_button {
+	display: block;
+	position: relative;
+	z-index: 1;
+	background-color: #4aaaa5;
+	height: 45px;
+	width: 216px;
+	bottom: 100px;
+	right: 5px;
+}
+
+.icon3_button h6 {
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	position: relative;
+	color: white;
+	text-align: center;
+	top: 15px;
+}
+
+/* Portfolio Icon 4 */
+.icon4 {
+	float: right;
+	height: 160px;
+	width: 216px;
+	margin: 20px;
+	margin-right: 40px;
+}
+
+.icon4 img{
+	height: 160px;
+	width: 216px;
+}
+
+.icon4_button {
+	display: block;
+	position: relative;
+	z-index: 1;
+	background-color: #4aaaa5;
+	height: 45px;
+	width: 216px;
+	bottom: 100px;
+	right: 5px;
+}
+
+.icon4_button h6 {
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	position: relative;
+	color: white;
+	text-align: center;
+	top: 15px;
+}
+
+/* Portfolio Icon 5 */
+.icon5 {
+	float: left;
+	height: 160px;
+	width: 216px;
+	margin: 20px;
+}
+
+.icon5 img{
+	height: 160px;
+	width: 216px;
+}
+
+.icon5_button {
+	display: block;
+	position: relative;
+	z-index: 1;
+	background-color: #4aaaa5;
+	height: 45px;
+	width: 216px;
+	bottom: 100px;
+	right: 5px;
+}
+
+.icon5_button h6 {
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	position: relative;
+	color: white;
+	text-align: center;
+	top: 15px;
+}
+
+/* Contact Page */
+.contact_background {
+	border-bottom: solid #4aaaa5 10px;
+	float: left;
+	background-image: url("file:///Users/wehaveaproblem16/Basic-Portfolio/assets/images/cork-wallet/cork-wallet.png");
+}
+
+.about_me_contact {
+	border: solid #dddddd 1px;
+	display: block;
+	background-color: #ffffff;
+	padding: 10px;
+	margin: 1px 0px 150px 22px;
+	height: 396px;
+	width: 550px;
+}
+
+.section_container form {
+	padding-left: 16px;
+}
+
+.form_box1 {
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	color: #bbb;
+	width: 510px;
+	border: solid lightgrey 1px;
+	border-radius: 2px;
+	padding: 5px;
+	margin-left: 0px;
+}
+
+.form_box2 {
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	color: #bbb;
+	height: 110px;
+	width: 518px;
+	border: solid lightgrey 1px;
+	border-radius: 2px;
+	margin-left: 0px;
+}
+
+.form_submit {
+	z-index: 1;
+	height: 40px;
+	width: 80px;
+	background-color: #4aaaa5;
+
+}
+
+.form_submit a {
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	position: relative;
+	color: white;
+	text-align: center;
+	bottom: 29px;
+}
+
+/* Connect Container - About Me Page */
+.connect_container {
+	border: solid #dddddd 1px;
+	background-color: #ffffff;
+	padding: 20px;
+	height: 150px;
+	width: 200px;
+	margin: 15px 47px 335px 0px;
+}
+
+.connect_container img {
+	align: center;
+}
+
+/* Connect Container - Portfolio Page */
+.connect_container_p {
+	border: solid #dddddd 1px;
+	position: relative;
+	background-color: #ffffff;
+	padding: 20px;
+	height: 150px;
+	width: 200px;
+	margin: 15px 21px 634px 0px;
+}
+
+.connect_container_p img {
+	align: center;
+}
+
+/* Connect Container - Contact Page */
+.connect_container_contact {
+	border: solid #dddddd 1px;
+	background-color: #ffffff;
+	padding: 20px;
+	height: 150px;
+	width: 200px;
+	margin: 15px 20px 390px 0px;
+}
+
+.connect_container_contact img {
+	align: center;
+}
+
+/* Connect Container - Icons */
+.github_icon {
+    display: inline;
+    position: relative;
+    height: 60px;
+    width: 60px;
+    align: center;
+    bottom: 30px;
+    margin-left: 5px;
+}
+
+.github_icon img {
+	height: 60px;
+    width: 60px;
+    align: center;
+    margin-top: 60px;
+}
+
+.github_icon img:hover {
+
+}
+
+.github_icon a{
+    position: relative;
+    height: 60px;
+    width: 60px;
+    align: center;
+    margin-top: -5px;
+    margin-left: 0px;
+    bottom: 28px;
+}
+
+.linkedin_icon {
+	position: relative;
+	z-index: 2;
+	display: inline;
+    position: relative;
+    height: 60px;
+    width: 60px;
+    align: center;
+    bottom: 30px;
+	margin-top: 30px;
+	margin-left: -4px;
+	margin-right: 2px;
+}
+
+.linkedin_icon img {
+	height: 60px;
+    width: 60px;
+    align: center;
+    margin-top: 60px;
+    margin-left: -10px;
+}
+
+.linkedin_icon a {
+	position: relative;
+    height: 60px;
+    width: 60px;
+    align: center;
+    margin-top: -5px;
+    margin-left: 0px;
+    bottom: 28px;
+}
+
+.stackoverflow_icon {
+	position: relative;
+	display: inline;
+	height: 60px;
+    width: 60px;
+	margin-bottom: 2px;
+	margin-right: 5px;
+	bottom: 30px;
+	align: center;  
+}
+
+.stackoverflow_icon img {
+    height: 54px;
+    width: 54px;
+    align: center;
+    margin-top: 60px;
+    margin-left: 137px;
+    position: relative;
+    bottom: 119px;
+    border: solid white 1px;
+}
+
+.stackoverflow_icon a {
+	position: relative;
+    height: 60px;
+    width: 60px;
+    align: center;
+    margin-top: -5px;
+    margin-left: 0px;
+    bottom: 30px;
+}
+
+/* Footer */
+.footer {
+	z-index: 2;
+	border-top: solid #4aaaa5 6px;
+	background-color: #666666;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	text-align: center;
+	padding: 19px;
+	position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.footer p {
+	color: #dddddd;
+}
+
+@media screen and (max-width: 980px) {
+	#name {
+		margin-left: 112px;
+	}
+
+	.navbar{
+		margin-left: 50px;
+		margin-right: 250px;
+	}
+
+	.about_me p {
+		float: left;
+		margin-top: 0px;
+		margin-right: 3px;
+	}
+
+	.about_me {
+		height: 733px;
+		width: 278px;
+		margin-top: 15px;
+		margin-left: -94px;
+	}
+
+	.about_me img {
+		margin: 23px 14px 8px 14px;
+		height: 224px;
+		width: 248px;
+	}
+
+	.connect_container {
+		margin-top: -305px;
+		margin-left: -378px;
+	}
+
+	.connect_container_p {
+		margin-left: -430px;
+		margin-bottom: 1010px;
+	}
+
+	.connect_container_contact {
+		margin-left: 50px;
+		margin-bottom: 388px;
+		margin-right: 140px;
+	}
+
+	.portfolio_icons {
+		width: 278px;
+		height: 1075px;
+		margin-left: -120px;
+	}
+
+	.about_me_contact {
+		width: 400px;
+		margin-left: 119px;
+	}
+
+	.form_box1 {
+		width: 354px;
+	}
+
+	.form_box2 {
+		width: 362px;
+	}
+
+	.icon1 {
+		float: left;
+	}
+
+	.icon2 {
+		float: left;
+
+	}
+
+	.icon3 {
+		float: left;
+	}
+
+	.icon4 {
+		float: left;
+	}
+
+	.icon5 {
+		float: left;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	#header {
+	    display: -ms-flexbox;
+	    display: -webkit-flex;
+	    display: flex;
+	    -webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	    flex-direction: row;
+	    -webkit-flex-wrap: nowrap;
+	    -ms-flex-wrap: nowrap;
+	    flex-wrap: nowrap;
+	    -webkit-justify-content: space-around;
+	    -ms-flex-pack: distribute;
+	    justify-content: space-around;
+	    -webkit-align-content: center;
+	    -ms-flex-line-pack: center;
+	    align-content: center;
+	    -webkit-align-items: center;
+	    -ms-flex-align: center;
+	    align-items: center;
+	    border-bottom: solid #cccccc 2px;
+    }
+
+	#name {
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    margin-left: 0px;
+    margin-right: 74px;
+    width: 256px;
+    }
+
+	.navbar {
+	    -webkit-order: 0;
+	    -ms-flex-order: 0;
+	    order: 0;
+	    -webkit-flex: 0 1 auto;
+	    -ms-flex: 0 1 auto;
+	    flex: 0 1 auto;
+	    -webkit-align-self: flex-start;
+	    -ms-flex-item-align: start;
+	    align-self: flex-start;
+	        width: 500px;
+    	margin-left: 19px;
+    	margin-right: -236px;
+    	margin-top: 17px;
+	}
+		
+	h3 {
+		text-align: left;
+		margin-left: 10px;
+	}
+
+	.connect_container {
+		width: 657px;
+		margin: 15px 47px 100px 0px;
+		margin-left: 33px;
+	}
+
+	.connect_container_p {
+		width: 656px;
+		margin: 15px 47px 100px 0px;
+		margin-left: 34px;
+	}
+
+	.connect_container_contact {
+		margin: 16px 0px 94px 34px;
+    	width: 656px;
+	}
+
+	.stackoverflow_icon img {
+    height: 54px;
+    width: 54px;
+    align: center;
+    margin-top: 60px;
+    margin-left: -14px;
+    position: relative;
+    bottom: 0px;
+    border: solid white 1px;
+	}
+
+	.flex-container {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    }
+
+	.flex-item:nth-child(1) {
+	    -webkit-order: 0;
+	    -ms-flex-order: 0;
+	    order: 0;
+	    -webkit-flex: 0 1 auto;
+	    -ms-flex: 0 1 auto;
+	    flex: 0 1 auto;
+	    -webkit-align-self: auto;
+	    -ms-flex-item-align: auto;
+	    align-self: auto;
+	    }
+
+	.flex-item:nth-child(2) {
+	    -webkit-order: 0;
+	    -ms-flex-order: 0;
+	    order: 0;
+	    -webkit-flex: 0 1 auto;
+	    -ms-flex: 0 1 auto;
+	    flex: 0 1 auto;
+	    -webkit-align-self: auto;
+	    -ms-flex-item-align: auto;
+	    align-self: auto;
+	    }
+
+	.about_me {
+		height: 346px;
+    	width: 676px;
+		margin: 8px 0px 4px 34px;
+	}
+
+	.about_me p {
+		float: none;
+		margin-top: 10px;
+	}
+
+	.about_me img {
+		margin-top: 9px;
+	}
+
+	.portfolio_icons {
+    border: solid #dddddd 1px;
+    display: inline;
+    background-color: #ffffff;
+    padding: 10px;
+    margin: 0px 0px 5px 34px;
+    height: 669px;
+    width: 676px;
+	}
+
+	.about_me_contact {
+		height: 395px;
+		width: 676px;
+		margin: 8px 0px 4px 34px;
+	}
+
+	.form_box1 {
+		width: 631px;
+	}
+
+	.form_box2 {
+		width: 639px;
+	}
+
+	.portfolio_icons {
+		height: 752px;
+	}
+
+	.portfolio_icons img {
+		height: 200px;
+		width: 300px;
+	}
+
+	.icon1_button {
+		width: 300px;
+	}
+
+	.icon2 {
+		margin-left: 77px;
+	}
+
+	.icon3 {
+		margin-top: 40px;
+	}
+
+	.icon3 img {
+		border-radius: 4px;
+	}
+
+	.icon4 {
+		margin-left: 77px;
+		margin-top: 40px;
+	}
+
+	.icon4 img {
+		border-radius: 4px;
+	}
+
+	.icon5 {
+		margin-top: 40px;
+	}
+
+	.icon5 img {
+		border-radius: 4px;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.flex-container {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    }
+
+	.flex-item:nth-child(1) {
+	    -webkit-order: 0;
+	    -ms-flex-order: 0;
+	    order: 0;
+	    -webkit-flex: 0 1 auto;
+	    -ms-flex: 0 1 auto;
+	    flex: 0 1 auto;
+	    -webkit-align-self: auto;
+	    -ms-flex-item-align: auto;
+	    align-self: auto;
+	    }
+
+	.flex-item:nth-child(2) {
+	    -webkit-order: 0;
+	    -ms-flex-order: 0;
+	    order: 0;
+	    -webkit-flex: 0 1 auto;
+	    -ms-flex: 0 1 auto;
+	    flex: 0 1 auto;
+	    -webkit-align-self: auto;
+	    -ms-flex-item-align: auto;
+	    align-self: auto;
+	    }
+
+	#header {
+		display: inline;
+	}
+
+	#name {
+		margin: 0px;
+		width: 623px;
+	}
+
+	h1 {
+		text-align: center;
+	}
+
+	.navbar {
+		width: 623px;
+	}
+
+	li {
+		width: 213px;
+		margin-left: 23px;
+		margin-right: 30px;
+	}
+
+	span {
+		margin-left: 64px;
+	}
+
+	.about_me {
+		height: 815px;
+		width: 588px;
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+
+	.about_me img {
+		width: 550px;
+		height: 500px;
+	}
+
+	.about_me p {
+		margin-right: 11px;
+	}
+
+	.connect_container {
+		width: 568px;
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+
+	.portfolio_icons {
+		height: 1774px;
+		width: 598px;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+
+	.portfolio_icons img {
+		height: 318px;
+		width: 565px;
+	}
+
+	.icon1 {
+		margin-left: 6px;
+	}
+
+	.icon1_button {
+		width: 565px;
+	}
+
+	.icon2 {
+		margin-right: 292px;
+		margin-top: 158px;
+		margin-left: 6px;
+	}
+
+	.icon2 img {
+		border-radius: 4px;
+	}
+
+	.icon3 {
+		margin-left: 6px;
+		margin-right: 128px;
+		margin-top: 158px;
+	}
+
+	.icon3 img {
+		border-radius: 4px;
+	}
+
+	.icon4 {
+		margin-left: 6px;
+		margin-right: 138px;
+		margin-top: 158px;
+	}
+
+	.icon4 img {
+		border-radius: 4px;
+	}
+
+	.icon5 {
+		margin-left: 6px;
+		margin-top: 158px;
+	}
+
+	.icon5 img {
+		border-radius: 4px;
+	}
+
+	.connect_container_p {
+		width: 578px;
+		margin-left: 10px;
+	}
+
+	.about_me_contact {
+		width: 588px;
+		margin-left: 15px;
+	}
+
+	.form_box1 {
+		width: 543px;
+	}
+
+	.form_box2 {
+		width: 551px;
+	}
+
+	.connect_container_contact {
+		margin-left: 15px;
+		margin-bottom: 84px;
+		width: 568px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
