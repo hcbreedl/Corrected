@@ -1,3 +1,7 @@
+html, body {
+	height: 100%;
+}
+
 nav {
 	position: fixed;
 }
@@ -12,32 +16,20 @@ nav {
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
-    height: 500px;
-}
-
-.btn-lg {
-	margin-left: 80px;
-}
-
-#About_container {
-	background-image: url(https://github.com/hcbreedl/Portfolio/blob/master/assignment2/assets/IMG_0990-1.JPG?raw=true);
-    -webkit-background-size: 100% 100%;
-    -moz-background-size: 100% 100%;
-    -o-background-size: 100% 100%;
-    background-size: 100% 150%;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: -30px;
-    width: 1152px;
-    height: 700px;
-    border-bottom: solid white 3px;
+    height: 100%;
+    overflow-y:auto;
 }
 
 #About_paragraph {
-	margin-top: 100px;
+	/*margin-top: 100px;*/
 	border: solid white 3px;
 	text-align: center;
 	padding: 10px;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+#About_paragraph p {
+	font-size: 18px;
 }
 
 #social_media_buttons {
@@ -67,14 +59,47 @@ h2 {
 
 #Portfolio_title_row {
 	background-color: white;
+	margin-top: -21px;
 }
 
 #thumbnail_images_row {
+	padding-top: 21px;
+	margin-top: -21px;
 	background-color: white;
+}
+
+.thumbnail:hover {
+	opacity: 0.7;
+	transition: 0.4s;
+}
+
+.carousel-caption {
+	font-size: 24px;
 }
 
 legend {
 	text-align: center;
+	font-size: 38px;
+}
+
+form {
+	background-image: url("https://github.com/hcbreedl/Portfolio/blob/master/assignment2/assets/Contact%20background%20img.jpg?raw=true");
+	background-size: cover;
+	margin-top: -21px;
+	padding: 21px;
+	border-top: solid white 3px;
+	border-bottom: solid white 3px;
+	-webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+    height: 100%;
+    overflow-y:auto;
+}
+
+#form_background {
+    background: rgba(255,255,255, 0.3);
+    border-radius: 16px;
 }
 
 #inputMessage {
