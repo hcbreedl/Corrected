@@ -994,6 +994,7 @@ span {
 
 	#header {
 		display: inline;
+		position: static;
 	}
 
 	#name {
